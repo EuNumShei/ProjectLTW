@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.operator-main, .operator-inventory, .edit-phone, .operator-users, .operator-orders {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.operator-main h1, .operator-inventory h2, .edit-phone h2, .operator-users h2, .operator-orders h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.operator-main nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.operator-main nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.operator-main nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.operator-inventory table, .operator-users table, .operator-categories table, .operator-orders table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.operator-inventory table, .operator-inventory table th, .operator-inventory table td, 
+.operator-users table, .operator-users table th, .operator-users table td, .operator-orders table, .operator-orders table th, .operator-orders table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.operator-categories table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.operator-categories table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: #fff;
+}
+
+.operator-categories button {
+    color: #007BFF;
+    padding: 5px 10px;
+    background-color: #e1f5fe;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.operator-inventory table th, .operator-users table th, .operator-categories table th, .operator-orders table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.operator-inventory table td button.edit, .operator-users table td button, .operator-categories table td button, .operator-orders table td button {
+    color: #007BFF;
+    padding: 5px 10px;
+    background-color: #e1f5fe;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.operator-inventory table td button.edit:hover, .operator-users table td button:hover {
+    background-color: #b3e5fc;
+}
+
+.operator-inventory table td button.remove-item, .operator-users table td button.delete {
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #f44336;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.operator-inventory table td button.remove-item:hover, .operator-users table td button.delete:hover {
+    background-color: #e57373;
+}
+
+.operator-inventory table td a:hover {
+    color: #0056b3;
+}
+
+.operator-users table td button.delete {
+    background-color: #f44336;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .operator-main, .operator-inventory, .edit-phone, .operator-users, .operator-orders {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .operator-main h1, .operator-inventory h2, .edit-phone h2, .operator-users h2, .operator-orders h2 {
+        margin-bottom: 10px;
+    }
+    
+    .operator-main nav ul li {
+        margin-right: 5px;
+    }
+    
+    .operator-inventory table, .operator-users table, .operator-categories table, .operator-orders table {
+        font-size: 12px;
+    }
+    
+    .operator-inventory table td button.edit, .operator-users table td button, .operator-categories table td button, .operator-orders table td button {
+        font-size: 10px;
+    }
+}

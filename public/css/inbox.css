@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+}
+
+.contacts {
+    width: 300px;
+    background-color: #fff;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contacts h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contacts nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts nav ul li {
+    margin-bottom: 10px;
+}
+
+.contacts nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.contacts nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.chat {
+    flex: 1;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.msg {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.msg.sent {
+    background-color: #e9ffe9;
+    text-align: right;
+}
+
+.msg.received {
+    background-color: #e9f1ff;
+}
+
+.msg span {
+    display: block;
+    font-weight: bold;
+}
+
+.msg p {
+    margin: 5px 0;
+}
+
+.msg span:last-child {
+    font-size: 12px;
+    color: #999;
+}
+
+.send-message {
+    margin-top: 20px;
+}
+
+.send-message form {
+    display: flex;
+    flex-direction: column;
+}
+
+.send-message textarea {
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.send-message button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.send-message button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .contacts {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .chat {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacts {
+        padding: 10px;
+    }
+
+    .chat {
+        padding: 10px;
+    }
+
+    .send-message textarea {
+        font-size: 12px;
+    }
+}

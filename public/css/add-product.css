@@ -1,0 +1,82 @@
+.product-adding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-top: 0px;
+}
+
+.form-title {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-adding-form {
+    border: 1px solid #333;
+    padding: 20px; 
+    border-radius: 20px;
+    height: auto;
+    width: 60%;
+    max-width: 600px; 
+    background-color: #fff; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-adding-form label {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+.product-adding-form input[type="text"],
+.product-adding-form input[type="email"],
+.product-adding-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submitbutton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+#submitbutton:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 0px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .product-adding-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-adding-form {
+        width: 90%;
+    }
+}
