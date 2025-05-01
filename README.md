@@ -8,13 +8,13 @@
 
 ​
 
-- Guilherme Teixeira (up202204875) 35%
+- Guilherme Teixeira (up202204875)
 
-- Júlio Santos (up202207975) 35%
+- Júlio Santos (up202207975)
 
-- Diogo Neves (up202108460) 30%
+- Diogo Neves (up202108460)
 
-​
+​Project Grade: 15.5
 
 ## Install Instructions
 
